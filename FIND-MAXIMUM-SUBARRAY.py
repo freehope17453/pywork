@@ -21,8 +21,7 @@ def find_max_crossing_subarray(A,low,mid,high):
     sum=0
     i=mid
     for i in reversed(range(low,i+1)):
-        sum = sum+A[i]
-            
+        sum = sum+A[i]     
         if sum>left_sum:
             left_sum=sum
             max_left = i
